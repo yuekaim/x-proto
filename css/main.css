@@ -10,11 +10,11 @@
 }
 
 #world {
-  left:25%;
+  left:15%;
   top:25%;
   position: absolute;
   transform-style: preserve-3d;
-  width: 60%;
+  width: 70%;
   height: 100%;
   background-image: url("../img/xproto.png");
   background-size: 100%;
@@ -23,7 +23,8 @@
 }
 
 #buy {
-    font-family: 'Yatra One', cursive;
+    font-family: 'Sen', sans-serif;
+    font-weight: 800;
     font-size: 30px;
     text-decoration: none;
     color: black;
@@ -52,12 +53,12 @@
     border: 1px solid #000000;
     box-sizing: border-box;
     
-    font-family: 'Yatra One', cursive;
+    font-family: 'Sen', sans-serif;
     font-size: 30px;
 }
 
 #pass::placeholder {
-    font-family: 'Yatra One', cursive;
+    font-family: 'Sen', sans-serif;
     font-size: 30px;
     text-align: center;
     color: gainsboro;
@@ -70,9 +71,10 @@
     width: 200px;
     height: 60px;
 
-    font-family: 'Yatra One', cursive;
+    font-family: 'Sen', sans-serif;
     font-size: 30px;
     text-decoration: none;
+    font-weight: 800;
     color: white;
     
     z-index: 4;
@@ -84,9 +86,9 @@
 #timer{
     
     position: absolute;
-    font-family: 'Yatra One', cursive;
+    font-family: 'Sen', sans-serif;
     font-size: 60px;
-    text-align: center;
+    text-align: left;
     right: 26px;
     bottom: 0px;
     margin-bottom: 0px;
@@ -94,6 +96,7 @@
     z-index: 3;
     color: #24FF00;
     letter-spacing: 0.3em;
+    
 }
 
 #time{

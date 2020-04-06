@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<title> x-proto </title>
 		<link rel="stylesheet" type="text/css" href="../css/main.css">
-        <link href="https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica:400i|Yatra+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;800&display=swap" rel="stylesheet">
         
 
 	</head>
@@ -65,7 +65,7 @@
         
         <script>
             function hideMask() {
-                var pass, check, mask, buy;
+                var pass, check, mask, buy, viewport, timer;
                 
                 
                 //var text = document.getElementById('pass');
@@ -78,6 +78,10 @@
                 check = document.getElementById("check");
                 mask = document.getElementById("mask");
                 buy = document.getElementById("buy");
+                viewport = document.getElementById("viewport");
+                timer = document.getElementById("timer");
+            
+                
                 
 
                 
@@ -87,8 +91,21 @@
                 check.style.display = "none";
                 mask.style.display = "none";
                 buy.style.display = "none";
+                
+                viewport.style.left="75%";
+                viewport.style.top="75%";
+                    
+                timer.style.left="0px";
+                timer.style.marginLeft="0px";
+                timer.style.top="0px"
+                timer.style.bottom="500px"
+                timer.style.marginTop="0px";
+                document.getElementById("time").style.marginTop="0px";  
+                
+                    
+                    
                 } else {
-                    document.getElementById("pass").innerHTML="test";
+                    document.getElementById('pass').value = '';
                 }
             }
         </script>
