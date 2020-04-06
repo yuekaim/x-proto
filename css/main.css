@@ -1,0 +1,103 @@
+#viewport {
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  perspective: 400;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 3;
+}
+
+#world {
+  left:25%;
+  top:25%;
+  position: absolute;
+  transform-style: preserve-3d;
+  width: 60%;
+  height: 100%;
+  background-image: url("../img/xproto.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: 3;
+}
+
+#buy {
+    font-family: 'Yatra One', cursive;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+    
+    position: absolute;
+    width: 221px;
+    height: 215px;
+    left: 26px;
+    top: 28px;
+
+    line-height: 37px;
+    
+    z-index: 4;
+}
+
+#pass {
+    position:absolute; 
+    z-index:4;
+    
+    width: 70%;
+    height: 60px;
+    left: 20%;
+    right: 226px;
+    top: 5%;
+
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    
+    font-family: 'Yatra One', cursive;
+    font-size: 30px;
+}
+
+#pass::placeholder {
+    font-family: 'Yatra One', cursive;
+    font-size: 30px;
+    text-align: center;
+    color: gainsboro;
+}
+
+#check {
+    position: absolute;
+    right: 26px;
+    top: 5%;
+    width: 200px;
+    height: 60px;
+
+    font-family: 'Yatra One', cursive;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    
+    z-index: 4;
+    
+    background-color: #000000;
+    border: 1px solid #000000;
+}
+
+#timer{
+    
+    position: absolute;
+    font-family: 'Yatra One', cursive;
+    font-size: 60px;
+    text-align: center;
+    right: 26px;
+    bottom: 0px;
+    margin-bottom: 0px;
+    width: 500px;
+    z-index: 3;
+    color: #24FF00;
+    letter-spacing: 0.3em;
+}
+
+#time{
+    margin-bottom: 0px;
+    margin-left:0px;
+}
+

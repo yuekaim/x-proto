@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<title> x-proto </title>
+		<link rel="stylesheet" type="text/css" href="../css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica:400i|Yatra+One&display=swap" rel="stylesheet">
+        
+
+	</head>
+    
+	<body>
+        
+        <input type="text" id="pass"  placeholder="access code"> 
+        <button id="check"   onclick="hideMask()" value="join">UNMASK</button>
+        <img id="mask"   style="z-index:2; position:absolute; top:0; left:0;" width="100%" height="100%" src="img/mask.png">
+        
+        <a id="buy"   href="https://gum.co/VJVfL?wanted=true" target="_blank">BUY<br>ACCESS<br>CODE</a>
+        
+        <div id="viewport">
+                <div id="world"></div>
+        </div>
+        
+        <!--live stream-->
+        <iframe src="//iframe.dacast.com/b/159728/c/533133" style="z-index:-1; position:absolute; top:0; left:0;" width="100%" height="100%" frameborder="0" scrolling="no" allow="autoplay" fullscreen="yes" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+        
+        
+        <!--timer-->
+        <div id="timer"><p id="time"></p></div>
+
+        <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("April 25, 2020 18:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+          // Get today's date and time
+          var now = new Date().getTime();
+
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+
+          // Time calculations for days, hours, minutes and seconds
+          var days = ("0" + Math.floor(distance / (1000 * 60 * 60 * 24))).slice(-2);
+          var hours = ("0" + Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).slice(-2);
+          var minutes = ("0" + Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).slice(-2);
+          var seconds = ("0" + Math.floor((distance % (1000 * 60)) / 1000)).slice(-2);
+
+          // Output the result in an element with id="demo"
+          document.getElementById("time").innerHTML = days + ":" + hours + ":"
+          + minutes + ":" + seconds;
+
+          // If the count down is over, write some text 
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("timer").innerHTML = "live now";
+            document.getElementById("timer").style.fontSize = "20px;";
+          }
+        }, 1000);
+        </script>
+
+
+        
+        <script>
+            function hideMask() {
+                var pass, check, mask, buy;
+                
+                
+                //var text = document.getElementById('pass');
+                //var check = document.getElementById('check');
+                
+                //var maskSetting = mask.style.display;
+
+                // Get the value of the input field with id="numb"
+                pass = document.getElementById("pass");
+                check = document.getElementById("check");
+                mask = document.getElementById("mask");
+                buy = document.getElementById("buy");
+                
+
+                
+                if (pass.value == "u%U-?m%qdt*@FkqnhPZz&ntskEXA2tKBJJ$FM^C=tVnZ#wxUK8C$VpW_snMdw@pC=q&shg-EZYRQqvCDaZ93Nap*F35pTn#n89Q!wW=#@+%dbYL^QN$xV?qLaVC?#$qX") {
+               
+                pass.style.display = "none";
+                check.style.display = "none";
+                mask.style.display = "none";
+                buy.style.display = "none";
+                } else {
+                    document.getElementById("pass").innerHTML="test";
+                }
+            }
+        </script>
+        
+        <script src="https://gumroad.com/js/gumroad.js"></script>
+        
+
+        <script src="js/bg.js"></script>
+        
+    </body>
+</html>
