@@ -12,11 +12,17 @@
     
 	<body>
         
+        <!-- Noscript content for added SEO -->
+            
+            <!-- You can customize this button any way you like -->
+            <a id="buy">Virtual<br>Ticket</a>
+ 
+        
         <input type="text" id="pass"  placeholder="access code"> 
         <button id="check"   onclick="hideMask()" value="join">UNMASK</button>
         <img id="mask"   style="z-index:2; position:absolute; top:0; left:0;" width="100%" height="100%" src="img/mask.png">
         
-        <a id="buy"   href="https://gum.co/VJVfL?wanted=true" target="_blank">BUY<br>ACCESS<br>CODE</a>
+        <!--<a id="buy"   href="https://gum.co/VJVfL?wanted=true" target="_blank">BUY<br>ACCESS<br>CODE</a>-->
         
         <div id="viewport">
                 <div id="world"></div>
@@ -32,9 +38,9 @@
             <span class="close">&times;</span>
             <p>x-proto is an online platform that aims to build and support a decentralized community of artists and like-minded people. We seek to amplify art and ideas that do not have an immediate place in our contemporary creative economy. We want this platform to foster connectivity and empathy across a global network. <br><br>
 
-The initial form of this project concentrates on live streaming. Adapting to new forms of broadcasting and digital spaces is important to our mission and we hope to grow into other technologies in the near future.<br><br>
+            The initial form of this project concentrates on live streaming. Adapting to new forms of broadcasting and digital spaces is important to our mission and we hope to grow into other technologies in the near future.<br><br>
 
-To inquire about possible collaborations, showcases, contributions, and more, please email us at xprotostream@gmail.com, or find us on instagram @x_proto.club.</p>
+            To inquire about possible collaborations, showcases, contributions, and more, please email us at xprotostream@gmail.com, or find us on instagram @x_proto.club.</p>
           </div>
 
         </div>
@@ -48,7 +54,7 @@ To inquire about possible collaborations, showcases, contributions, and more, pl
 
         <script>
         // Set the date we're counting down to
-        var countDownDate = new Date("April 25, 2020 18:00:00").getTime();
+        var countDownDate = new Date("April 26, 2020 21:00:00").getTime();
 
         // Update the count down every 1 second
         var x = setInterval(function() {
@@ -135,7 +141,24 @@ To inquire about possible collaborations, showcases, contributions, and more, pl
             }
         </script>
         
-        <script src="https://gumroad.com/js/gumroad.js"></script>
+        <!--<script src="https://gumroad.com/js/gumroad.js"></script>-->
+        
+        <!--eventbrite-->
+        <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+
+            <script type="text/javascript">
+                var exampleCallback = function() {
+                    console.log('Order complete!');
+                };
+
+                window.EBWidgets.createWidget({
+                    widgetType: 'checkout',
+                    eventId: '103477923254',
+                    modal: true,
+                    modalTriggerElementId: 'buy',
+                    onOrderComplete: exampleCallback
+                });
+            </script>
         
         <!--modal-->
         <script>
