@@ -36,7 +36,9 @@
           <!-- Modal content -->
           <div class="modal-content">
             <span class="close">&times;</span>
-            <p>x-proto is an online platform that aims to build and support a decentralized community of artists and like-minded people. We seek to amplify art and ideas that do not have an immediate place in our contemporary creative economy. We want this platform to foster connectivity and empathy across a global network. <br><br>
+            <p>access code can be found on the confirmation page after purchasing a virtual ticket, or in the confirmation email.<br><br>
+                
+                x-proto is an online platform that aims to build and support a decentralized community of artists and like-minded people. We seek to amplify art and ideas that do not have an immediate place in our contemporary creative economy. We want this platform to foster connectivity and empathy across a global network. <br><br>
 
             The initial form of this project concentrates on live streaming. Adapting to new forms of broadcasting and digital spaces is important to our mission and we hope to grow into other technologies in the near future.<br><br>
 
@@ -48,14 +50,14 @@
         <!--live stream-->
         <!--<iframe src="//iframe.dacast.com/b/159728/c/533133" style="z-index:-1; position:absolute; top:0; left:0;" width="100%" height="100%" frameborder="0" scrolling="no" allow="autoplay" fullscreen="yes" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>-->
         
-        <iframe src="https://player.twitch.tv/?channel=xproto_live&autoplay=1&muted=1" style="z-index:-1; position:absolute; top:0; left:0;" width="100%" height="100%" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://player.twitch.tv/?channel=xproto_live&autoplay=1&muted=false" style="z-index:-1; position:absolute; top:0; left:0;" width="100%" height="100%" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         
         <!--timer-->
         <div id="timer"><p id="time"></p></div>
 
         <script>
         // Set the date we're counting down to
-        var countDownDate = new Date("May 7, 2020 21:00:00").getTime();
+        var countDownDate = new Date("May 8, 2020 12:00:00").getTime();
 
         // Update the count down every 1 second
         var x = setInterval(function() {
@@ -79,7 +81,7 @@
           // If the count down is over, write some text 
           if (distance < 0) {
             clearInterval(x);
-            document.getElementById("timer").innerHTML = "live now";
+            document.getElementById("timer").style.display = "none";
             document.getElementById("timer").style.fontSize = "20px;";
           }
         }, 1000);
@@ -137,7 +139,7 @@
                     
                 } else {
                     document.getElementById('pass').value = '';
-                    window.alert("wrong access code :'(");
+                    window.alert("wrong access code :'( access code can be found on the confirmation page after purchasing a virtual ticket, or in the confirmation email.");
                 }
             }
         </script>
