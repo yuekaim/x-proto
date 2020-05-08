@@ -22,6 +22,8 @@
   z-index: 3;
 }
 
+#mask{opacity: 95%;}
+
 #buy {
     font-family: 'Sen', sans-serif;
     font-weight: 800;
